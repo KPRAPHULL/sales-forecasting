@@ -7,5 +7,5 @@ op = forecast_model.make_future_dataframe(periods = ip, freq = 'M')
 
 # Predict the graph
 predict = forecast_model.predict(op)  
-fig = model.plot(predict)
-st.write(predict)                    
+fig = forecast_model.plot(forecast)
+st.pyplot(fig)                   
